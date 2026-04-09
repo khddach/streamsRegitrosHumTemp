@@ -156,6 +156,7 @@ public class Main {
         */
        registros.stream()
                 .mapToDouble(Registro::getTemperatura)
-                .average().ifPresent(System.out::println);
+                .average()
+               .ifPresent(System.out::println);
     }
 }
